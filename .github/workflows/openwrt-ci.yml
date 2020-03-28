@@ -1,4 +1,4 @@
-name: xiaoheiba.2.8
+name: xiaoheiba.3.0
 
 on:
   push:
@@ -96,13 +96,12 @@ jobs:
 
           # 常用587977插件选择:
           cat >> .config <<EOF
-          CONFIG_PACKAGE_luci-app-adbyby-plus=y
           CONFIG_PACKAGE_luci-app-transmission=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks=y
           CONFIG_PACKAGE_luci-app-ttyd=y
-          CONFIG_PACKAGE_luci-app-wifischedule=y
           CONFIG_PACKAGE_luci-app-unblockmusic=y
           CONFIG_PACKAGE_luci-app-wrtbwmon=y
+          CONFIG_PACKAGE_luci-app-samba=y
           EOF
 
           # LuCI主题:
